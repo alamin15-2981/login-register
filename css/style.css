@@ -1,0 +1,142 @@
+/*
+==================
+Default css
+==================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kalam', cursive;
+    scroll-behavior: smooth;
+}
+/*
+==================
+Custom css
+==================
+*/
+.content-section,
+.registration-section,
+.login-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.7);
+}
+.link-section, 
+.registration-form,
+.login-form {
+    width: 360px;
+    height: 200px;
+    background-color: #8baecb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -2px 4px 15px #141212;
+}
+.login a, .registration a {
+    text-decoration: none;
+    font-size: 21px;
+    background-color: #3f51b5;
+    padding: 5px 40px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.registration a {
+    padding: 5px 8px;
+    background-color: tomato;
+}
+@media (max-width: 400px) {
+    .link-section {
+        width: 250px;
+        height: 150px;
+    }
+    .login a, .registration a {
+        font-size: 17px;
+    }
+}
+/*
+==================
+Registration css
+==================
+*/
+.registration-section {
+    background-image: url("../images/registration_bg1.jpg");
+}
+.registration-form {
+    width: 500px;
+    height: auto;
+    padding: 15px;
+}
+.login-btn {
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #ececec;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.input1 {
+    width: 200px;
+    height: 29px;
+    text-indent: 14px;
+    margin-left: 30px;
+}
+.input2 {
+    margin-left: 30px;
+    display: inline-block;
+}
+#input2 {
+    width: 200px;
+    height: 29px;
+    margin-left: 30px;
+}
+.btn1, .btn2 {
+    background-color: orange;
+    padding: 7px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .registration-section {
+        overflow: hidden;
+    }
+    .registration-form {
+        width: 350px;
+    }
+    .registration-form form {
+        margin-left: 75px;
+    }
+    .input1, #input2 {
+        width: 180px;
+    }
+    .btn1 {
+        padding: 7px 20px;
+    }
+}
+/*
+==================
+login css
+==================
+*/
+.login-section {
+    background-image: url("../images/login_bg1.jpg");
+    background-position: center bottom;
+}
+.login-btn1 {
+    background-color: #d5d9eb;
+}
